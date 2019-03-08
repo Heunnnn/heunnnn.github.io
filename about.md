@@ -54,9 +54,9 @@ JiHeun Ahn
   * __JSP/Servlet 쇼핑몰 웹 사이트__
     * 팀 프로젝트 - 프론트엔드/백엔드 개발
     * Java / JSP/ Servlet / Oracle DB
-* __Mini PokeGoa__
-  * 개인 프로젝트
-  * C++
+  * __Mini PokeGo__
+    * 개인 프로젝트
+    * C++
 
 #### 2016
   * __안드로이드 어플리케이션 "동국과제"__
