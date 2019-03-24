@@ -32,7 +32,7 @@ JiHeun Ahn
     * CNTTech engineering team
     * 카카오톡-2Dfire POS 중계서버 개발 프로젝트 참여
     * 서버 관리자용 웹 사이트 개발
-    * Java / Springboot / freemarker / mybatis / mysql  
+    * Java / Springboot / freemarker / hibernate / mysql  
 
   * __Go언어로 작성된 프로그램의 동시성 증명 연구__
     * 팀 연구& 프로젝트 - Go언어 프로그램 작성, CSP스크립트 작성
@@ -54,9 +54,9 @@ JiHeun Ahn
   * __JSP/Servlet 쇼핑몰 웹 사이트__
     * 팀 프로젝트 - 프론트엔드/백엔드 개발
     * Java / JSP/ Servlet / Oracle DB
-* __Mini PokeGoa__
-  * 개인 프로젝트
-  * C++
+  * __Mini PokeGo__
+    * 개인 프로젝트
+    * C++
 
 #### 2016
   * __안드로이드 어플리케이션 "동국과제"__
