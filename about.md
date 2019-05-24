@@ -27,14 +27,14 @@ JiHeun Ahn
 
   * __음원 하이라이트 추출 웹 사이트__
     * 팀 프로젝트 - 백엔드 개발
-    * Python / Django framework
+    * Python / LibROSA/ Django framework
     * 교내 공모전 은상 수상
 
   * __Internship (06.25~08.17)__
     * CNTTech engineering team
     * 카카오톡-2Dfire POS 중계서버 개발 프로젝트 참여
     * 서버 관리자용 웹 사이트 개발
-    * Java / Springboot / freemarker / hibernate / mysql  
+    * Java / Springboot / FreeMarker / Hibernate / MySQL
 
   * __Go언어로 작성된 프로그램의 동시성 증명 연구__
     * 팀 연구& 프로젝트 - Go언어 프로그램 작성, CSP스크립트 작성
