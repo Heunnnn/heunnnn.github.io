@@ -19,7 +19,7 @@ JiHeun Ahn
 
 #### 2019
 
-- __JSP/Servlet 게시판__ (개발중)
+- __JSP/Servlet 게시판__
   - 개인 복습용 프로젝트
   - Java/ JSP/ Servlet/ Oracle DB
 
