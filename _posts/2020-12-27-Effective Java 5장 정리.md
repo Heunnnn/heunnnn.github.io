@@ -21,7 +21,7 @@ tags:
 
 용어 정리
 
-![](https://github.com/Heunnnn/heunnnn.github.io/blob/master/images/post/20201227.jpg?raw=true)
+![](https://raw.githubusercontent.com/Heunnnn/heunnnn.github.io/master/images/post/20201227.jpg)
 
 ### [item26] 로 타입은 사용하지 말라
 
