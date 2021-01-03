@@ -147,7 +147,7 @@ static int numElementsInCommon(Set s1, Set s2){
 
 #### 할 수 있는 한 모든 비검사 경고를 제거하라
 
-- 제네릭을 사용하기 시작하면 숨낳은 컴파일러 경고를 볼 수 있다
+- 제네릭을 사용하기 시작하면 수많은 컴파일러 경고를 볼 수 있다
   - 비검사 형변환 경고
   - 비검사 메서드 호출 경고
   - 비검사 매개변수화 가변인수 타입 경고
@@ -186,7 +186,7 @@ static int numElementsInCommon(Set s1, Set s2){
     }
     ```
     
-  - @SuppressWarnings("unchecked") 애너테이션을 사용할 때, 그 경고를 무시해도 안전한 이유를 항상 주석으로 남겨야 한다
+  - `@SuppressWarnings("unchecked")` 애너테이션을 사용할 때, 그 경고를 무시해도 안전한 이유를 항상 주석으로 남겨야 한다
 -----
 
 ### [item28] 배열보다는 리스트를 사용하라
@@ -195,7 +195,7 @@ static int numElementsInCommon(Set s1, Set s2){
 
 - 배열은 공변(共變, covariant)타입
 
-  - Sub가 Super의 하위 타입이라면, 배열 Sub[]은 배령 Super[]의 하위 타입이다
+  - Sub가 Super의 하위 타입이라면, 배열 Sub[]은 배열 Super[]의 하위 타입이다
 
   - 즉, 서로 다른 타입 T1과 T2가 있을때, `List<T1>`은 `List<T2>`의 하위 타입도 아니고 상위 타입도 아니다.
 
@@ -223,6 +223,7 @@ static int numElementsInCommon(Set s1, Set s2){
 
   - 배열은 제네릭 타입, 매개변수화 타입, 타입 매개변수로 사용할 수 없다.
   - `new List<E>[]`,`new List<String>[]`, `new E[]`와 같이 작성하면 컴파일시 제네릭 배열 생성 오류를 일으킨다
+
 #### 제네릭 배열을 만들지 못하도록 막은 이유
 
 - 타입 안전하지 않기 때문이다
@@ -618,8 +619,8 @@ public void pushAll(Iterable<? extends E> src){
 - 이것을 popAll에 적용해서 작성해보자
 
 - ```java
-  public void popAll(Collection<? super E> dst){
-      // Stack으로부터 E 인스턴스를 소비한다
+  xpublic void popAll(Collection&lt;? super E&gt; dst){
+  xㅏ    // Stack으로부터 E 인스턴스를 소비한다
       while(!isEmpty())
           dst.add(pop());
   }
@@ -640,7 +641,7 @@ item28 Chooser 클래스 생성자
 public Chooser(Collection<? extends T> choices)
 ```
 
-- 이 생성자로 넘겨지는 choices 컬렉션은 T 타이의 값을 생산하기만 한다
+- 이 생성자로 넘겨지는 choices 컬렉션은 T 타입의 값을 생산하기만 한다
 - `Chooser<Number>`의 생성자에 `List<Integer>`를 넘기고 싶다?
   - 수정 전: 컴파일조차 되지 않는다
   - 수정 후: 생성자에서는 문제가 사라진다
