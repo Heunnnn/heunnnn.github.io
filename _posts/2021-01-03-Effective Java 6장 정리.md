@@ -116,7 +116,8 @@ public enum Operation {
     @Override public String toString() {return symbol;}
     public abstract double apply(double x, double y);
     
-    private static final Map<String, Operation> stringToEnum =  					Stream.of(values()).collect(toMap(Object::toString,e->e));
+    private static final Map<String, Operation> stringToEnum =
+        Stream.of(values()).collect(toMap(Object::toString,e->e));
     // 지정한 문자열에 해당하는 Operation이 존재한다면 반환한다.
     public static Optional<Operation> fromString(String symbol){
         return Optional.ofNullable(stringToEnum.get(symbol));
@@ -166,10 +167,10 @@ public enum Ensemble{
 - > ... Most programmers will have no use for this method. 
   >
   > It is designed for use by sophisticated enum-based data structures, such as [`EnumSet`](https://docs.oracle.com/javase/7/docs/api/java/util/EnumSet.html) and [`EnumMap`](https://docs.oracle.com/javase/7/docs/api/java/util/EnumMap.html).
-  >
-  > 대부분의 프로그래머는 이 메서드를 쓸 일이 없다. 
-  >
-  > 이 메서드는 EnumSet과 EnumMap과 같은 열거 타입 기반 범용 자료구조에 쓸 목적으로 설계되었다.
+  
+  대부분의 프로그래머는 이 메서드를 쓸 일이 없다. 
+  
+  이 메서드는 EnumSet과 EnumMap과 같은 열거 타입 기반 범용 자료구조에 쓸 목적으로 설계되었다.
 
 -----
 
@@ -336,7 +337,7 @@ System.out.println(Arrays.stream(garden).collect(groupringBy(p->p.lifeCycle,
 
 - MapFactory 매개변수에 원하는 맵 구현체를 명시해 호출
 - 스트림을 사용하면 EnumMap만 사용했을때와는 살짝 다르게 동작
-  - EnumMpa: 언제나 식물의 생애주기당 하나의 중첩 맵을 만든다
+  - EnumMap: 언제나 식물의 생애주기당 하나의 중첩 맵을 만든다
   - 스트림: 해당 생애주기에 속하는 식물이 있을 때만 만든다
 
 #### 예제: 두 열거 타입 값을 매핑하기 위한 ordinal()을 두번 사용
