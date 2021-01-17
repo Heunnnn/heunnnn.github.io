@@ -164,7 +164,7 @@ service.execute(() -> action());
   - 예시) 템플릿 메서드 패턴: 상위 클래스의 기본 메서드를 재정의, 원하는 동작 구현
     - 대체법: 같은 효과의 함수 객체를 받는 정적 팩터리나 생성자를 제공한다
     - 함수 객체를 매개변수로 받는 생성자와 메서드를 더 많이 만들어야 하는데, 이때 함수형 매개변수 타입을 올바르게 선택해야 한다
-- 보통은 java.util.function 패키지의 표준 함수형 인터페이스를 사용하는 것이 가장 좋다
+- 보통은 [java.util.function](https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html) 패키지의 표준 함수형 인터페이스를 사용하는 것이 가장 좋다
 
 #### 예시) LinkedHashMap의 removeEldestEntry 재정의
 
@@ -527,7 +527,7 @@ try(Stream<String> words = new Scanner(file).tokens()){
 - 반복적이기 때문에 병렬화도 불가능하다
 - **forEach 연산은 스트림 계산 결과를 보고할 때만 사용하고 계산할때는 사용하지 않는 것이 좋다**
 
- #### Collectors의 메서드들
+#### Collectors의 메서드들
 
 ##### 수집기(collector)
 
@@ -675,7 +675,7 @@ for(ProcessHandle p : iterableOf(ProcessHandle.allProcesses())){
 ```
 
 - 자바의 타입 추론이 문맥을 잘 파악하여 어댑터 메서드 안에서 따로 형변환하지 않아도 된다
-- 반환된 객체들이 반복문에서만 사용될 것을 안다면 Trerable 반환
+- 반환된 객체들이 반복문에서만 사용될 것을 안다면 Iterable 반환
 
 ```java
 // Iterable<E>를 Stream<E>로 중개해주는 어댑터
