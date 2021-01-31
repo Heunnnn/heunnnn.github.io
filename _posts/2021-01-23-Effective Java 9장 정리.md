@@ -545,18 +545,9 @@ public String statement2() {
 ##### 꼭 알아뒤야 할 특별한 메서드 이름
 
 - 객체의 타입을 바꿔서, 다른 타입의 또 다른 객체를 반환하는 인스턴스 메서드의 이름은 보통 toType 형태로 짓는다
-
   - toString, toArray
-
 - 객체의 내용을 다른 뷰로 보여주는 메서드의 이름은 asType 형태로 짓는다
-
   - asList
-
 - 객체의 값을 기본 타입 값으로 반환하는 메서드의 이름은 보통 typeValue 형태로 짓는다
-
   - intValue
-
 - 정적 팩터리의 이름은 다양하지만 from,of,valueOf,instance,getInstance,newInstance,getType,newType을 흔하게 사용한다. 
-
-  
-
